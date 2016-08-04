@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Login</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+<script>
+function validate(){
+var username = document.getElementById("username").value;
+var password = document.getElementById("password").value;
+if ( username == "mln" && password == "darling"){
+alert ("Login successfully");
+window.location="shopping.html";
+return false;
+}
+else{
+alert("Enter with valid cerentials");
+}
+}
+</script>
+</head>
+<body background="11.jpg">
+<div class="container">
+<div class="main">
+<h2>Login</h2>
+<form id="form_id" method="post" name="myform">
+<label style=font-color:green>User Name :</label></style>
+<input type="text" name="username" id="username"/>
+<label>Password :</label>
+<input type="password" name="password" id="password"/><br>
+<input type="button" class="btn btn-primary" value="Login" id="submit" onclick="validate()"/>
+<a href=" reg.html ">Signup></a>
+</form>
+</div>
+</div>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+</body>
+</html>
